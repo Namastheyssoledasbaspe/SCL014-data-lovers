@@ -1,274 +1,315 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.html {
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-
-
 /* header*/
 
 .header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 1%;
-    background-color: black;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  background-color: black;
+  box-sizing: border-box;
 }
 
-a {
-    margin: 0%;
-    width: 15%;
-    box-sizing: border-box;
+a{
+  margin: 0%;
+  width: 15%;
+  box-sizing: border-box;
 }
 
-.logo {
-    width: 80%;
-    height: 40%;
-    margin-left: 17%;
+.logo{
+  width: 80%;
+  height: 40%;
+  margin-left: 17%;
 }
 
-.navegador {
-    display: flex;
-    margin: 0% 0% 0% 27%;
-    width: 85%;
-    box-sizing: border-box;
+.navegador{
+  display: flex;
+  margin: 0% 0% 0% 27%;
+  width: 85%;
+  box-sizing: border-box;
 }
 
-.selects {
-    width: 25%;
-    background-color: black;
-    border: black;
-    margin: 0% 5% 0% 0%;
-    margin-block-end: 0%;
-    font-size: 1.3rem;
-    color: white
+.selects{
+  width: 25%;
+  background-color: black;
+  border: black;
+  margin: 0% 5% 0% 0%;
+  margin-block-end: 0%;
+  font-size: 1.3rem;
+  color: white
 }
 
-.selects select:last-of-type {
-    margin: 0%;
+.selects select:last-of-type{
+  margin: 0%;
 }
 
-.options {
-    border: white .5px;
-    font-size: 1rem;
-    text-align: center;
+.options{
+  border: white .5px;
+  font-size: 1rem;
+  text-align: center;
 }
 
-
+select>option:hover {
+  color: #b9b9b9;
+  cursor: pointer;
+}
 /* atletas pantalla principal */
 
-.input {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
+.input{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding:1rem;
+  box-sizing: border-box;
 }
-
 
 /* titulo seccion */
-
-.title {
-    font-family: sans-serif;
-    color: #bdbdbd;
-    width: 15%;
-    margin: 0% 0% 0% 10%;
+.title{
+  font-family: sans-serif;
+  color: #bdbdbd;
+  width: 15%;
+  margin: 0% 0% 0% 2%;
 }
-
 
 /* botones para ordenar A-Z Z-A */
-
-.button-az {
-    margin-left: 35%;
-    background: #F2F2F2;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    width: 5%;
-    height: 2rem;
-    border: solid 1px #f2f2f2;
-    color: #bdbdbd;
-    cursor: pointer;
+.button-az{
+  margin-left: 43%;
+  background: #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px; 
+  width: 5%;
+  height: 2rem;
+  border: solid 1px #f2f2f2;
+  color: gray;
+  cursor: pointer;
 }
 
-.button-za {
-    margin-left: 2%;
-    background: #F2F2F2;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    width: 5%;
-    height: 2rem;
-    border: solid 1px #f2f2f2;
-    color: #bdbdbd;
-    cursor: pointer;
+.button-za{
+  margin-left: 2%;
+  background: #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px; 
+  width: 5%;
+  height: 2rem;
+  border: solid 1px #f2f2f2;
+  color: gray;
+  cursor: pointer;
 }
-
 
 /* input buscar */
+.search{
+margin-left: 2%;
+background: #f2f2f2 url(imagenes/lupa.png) no-repeat left;
+background-position: 2%;
+border: solid 1px #f2f2f2;
+border-radius: 93px;
+width: 25%;
+height: 2rem;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-size: 1rem;
+text-align: center;
+font-family: sans-serif;
+color: #3d3d3d;
+box-sizing: border-box;
+}
 
-.search {
-    margin-left: 2%;
-    background: #f2f2f2;
-    border: solid 1px #f2f2f2;
-    border-radius: 93px;
-    width: 25%;
-    height: 2rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.gotop{
+  background: #f2f2f2 url(imagenes/arrowtop.png) no-repeat center;
+  position:fixed;
+  bottom: 70px;
+  right: 10px;
+  font-size: 1rem;
+  color: #F2F2F2;
+  cursor:pointer;
+  padding:1rem;
+  margin: 10px;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+  border-radius: 95px;
+}
+
+.godown{
+    background: #f2f2f2 url(imagenes/arrowdown.png) no-repeat center;
+    position:fixed;
+    bottom: 18px;
+    right: 10px;
     font-size: 1rem;
-    text-align: center;
-    font-family: sans-serif;
-    color: #fdfdfd;
+    color: #F2F2F2;
+    cursor:pointer;
+    padding:1rem;
+    margin: 10px;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    border-radius: 95px;
+  }
+
+#all-athletes{
+  width: 100%;
+  display:flex;
+  padding:1rem;
+  flex-flow:wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 
-#all-athletes {
-    width: 100%;
-    display: flex;
-    padding: 1rem;
-    flex-flow: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
+.box{ 
+  width:18%;
+  background-color: #26798e;
+  border-radius:10%;
+  margin:1rem 0 1rem 0;
+  padding:.2rem;
+  box-sizing:border-box; 
 }
 
-.box {
-    width: 18%;
-    background-color: #26798e;
-    border-radius: 10%;
-    margin: 1rem 0 1rem 0;
-    padding: .2rem;
-    box-sizing: border-box;
+.box:hover{
+  cursor: pointer;
+  box-shadow:0 4px 10px 0 rgba(134, 214, 188, 0.9);
 }
 
-.box:hover {
-    cursor: pointer;
-    box-shadow: 0 4px 10px 0 rgba(134, 214, 188, 0.9);
+.avatar{
+  width: 50%;
+  margin-left: 25%;
 }
 
-.avatar {
-    width: 50%;
-    margin-left: 25%;
+.name{
+  text-align: center;
+  font-size: 1rem;
+  font-family: verdana;
+  font-weight: lighter;
+  color:white;
 }
 
-.name {
-    text-align: center;
-    font-size: .9rem;
-    font-family: verdana;
-    font-weight: lighter;
-    color: white;
+.info{
+  font-size: .7rem;
+  font-family: verdana;
+  color: white;
+  text-align: center;
 }
-
-.info {
-    font-size: .7rem;
-    font-family: verdana;
-    color: white;
-    text-align: center;
-}
-
-.flag {
-    width: 20%;
-    margin-left: 40%;
-}
-
 
 /* modal */
-
-.hide {
-    display: none;
+.hide{
+  display: none;
 }
 
-.modal-athlete {
-    padding-bottom: 2%;
-    position: absolute;
+.modal-athlete{
+  padding-bottom: 2%;
+  position: absolute;
 }
 
-.box-modal {
-    background-color: rgba(142, 150, 142, 0.7);
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 1;
-    box-sizing: border-box;
-    position: fixed;
+.box-modal{
+  background-color: rgba(142, 150, 142, 0.7);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  position: fixed;
 }
 
-.avatar2 {
-    width: 40%;
-    margin: 0% 0% 2% 0%;
+.avatar2{
+  width: 35%;
+  margin: 0% 0% 2% 0%;
 }
 
-.athlete {
-    background-color: rgb(42, 150, 150);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0% 0% 2% 0%;
-    border-radius: 5%;
-    margin: auto;
+.athlete{
+  background-color: rgb(42, 150, 150) ;
+  width: 40%;
+  display: flex;
+  flex-direction: column;    
+  align-items: center;
+  padding: 0% 0% 2% 0%;
+  border-radius: 5%; 
+  margin: auto;
 }
 
-.close {
-    text-align: center;
-    color: black;
-    font-size: 2rem;
-    cursor: pointer;
-    align-self: flex-end;
-    margin: 3% 3% 0% 0%;
-    background-color: #fdfdfd;
-    border-radius: 15%;
-    width: 9%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.close{
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 3% 3% 0% 0%;
+  background-color: #fdfdfd;
+  border-radius: 15%;
+  width: 9%;
+  box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-table {
-    border-collapse: collapse;
-    margin: 2%;
+.name-modal{
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: verdana;
+  font-weight: lighter;
+  color:white;
 }
 
-td {
-    border: 1px solid white;
+.info-modal{
+  font-size: .8rem;
+  font-family: verdana;
+  color: white;
+  text-align: center;
 }
 
-
-/* footer */
-
-footer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: black;
-    box-sizing: border-box;
+table{
+  border-collapse: collapse;
+  margin: 2%;
 }
 
-.athlos-info {
-    width: 80%;
-    padding: .2rem;
-    margin: 0 0 0 .5rem;
-    box-sizing: border-box;
+td{
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  padding: .4%;
+  box-sizing: border-box;
 }
 
-.athlos {
-    font-size: 1rem;
-    font-family: sans-serif;
-    color: white;
+/* footer */ 
+footer{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width:100%;
+  height: 50px;
+  background-color:black;
+  box-sizing: border-box;
 }
 
-.barra-inferior {
-    padding: .3rem;
-    box-sizing: border-box;
-    width: 20%;
+.athlos-info{
+  width: 80%;
+  padding: .2rem;
+  margin: 0 0 0 .5rem;
+  box-sizing: border-box;
 }
 
-.navFooter {
-    display: flex;
-    justify-content: flex-end;
+.athlos{
+  font-size:1rem;
+  font-family:sans-serif;
+  color:white;
+}
+
+.barra-inferior{
+  padding:.3rem;
+  box-sizing:border-box;
+  width: 20%;
+}
+
+.navFooter{
+  display:flex;
+  justify-content: flex-end
 }
 
 @media (max-width:480px) {
@@ -288,13 +329,13 @@ footer {
     }
     .logo {
         width: 80%;
-        margin-left: 35%;
+        margin-left: 10%;
         margin-top: 10%;
     }
     .navegador {
         display: flex;
-        margin: 0% 0% 0% 11%;
-        width: 35em;
+        margin: 0% 0% 0% 5%;
+        width: 74%;
         box-sizing: border-box;
         margin-right: 3%;
     }
@@ -304,17 +345,18 @@ footer {
         border: black;
         margin: 0% 1% 0% 0%;
         margin-block-end: auto;
-        font-size: 0.65rem;
+        font-size: 0.68rem;
         color: white;
     }
-    selects select:last-of-type {
+    .selects select:last-of-type {
         margin: 10%;
     }
     .options {
-        border: white .5px;
-        font-size: 0.7rem;
-        text-align: center;
+        font-size: 0.65rem;
+        box-sizing: content-box;
     }
+
+    
     /* atletas pantalla principal */
     .input {
         display: flex;
@@ -330,16 +372,17 @@ footer {
         width: 15%;
         margin: 2% 0% 0% 2%;
         font-size: medium;
+        display: none;
     }
     /* botones para ordenar A-Z Z-A */
     .button-az {
-        margin-left: 25%;
+        margin-left: 0%;
         background: #F2F2F2;
         box-sizing: border-box;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         width: 15%;
-        height: 1.5rem;
+        height: 2rem;
         border: solid 1px #f2f2f2;
         color: #bdbdbd;
         cursor: pointer;
@@ -352,7 +395,7 @@ footer {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         width: 15%;
-        height: 1.5rem;
+        height: 2rem;
         border: solid 1px #f2f2f2;
         color: #bdbdbd;
         cursor: pointer;
@@ -360,12 +403,12 @@ footer {
     }
     /*input buscar */
     .search {
-        margin: 1rem 0 0 20%;
+        margin: 0 0 0 5%;
         background: #f2f2f2;
         border: solid 1px #f2f2f2;
         border-radius: 93px;
         width: 60%;
-        height: 1.5rem;
+        height: 2rem;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 0.7rem;
         text-align: center;
@@ -409,10 +452,7 @@ footer {
         color: white;
         text-align: center;
     }
-    .flag {
-        width: 20%;
-        margin-left: 40%;
-    }
+
     /* modal */
     .hide {
         display: none;
@@ -496,6 +536,231 @@ footer {
     }
 }
 
+@media (max-width:607px) and (min-width:479px) {
+  /* header*/
+  .header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0%;
+      background-color: black;
+      box-sizing: border-box;
+  }
+  a {
+      margin: 0%;
+      width: 15%;
+      box-sizing: border-box;
+  }
+  .logo {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 15%;
+  }
+  .navegador {
+      display: flex;
+      margin: 0% 0% 0% 5%;
+      width: 74%;
+      box-sizing: border-box;
+      margin-right: 3%;
+  }
+  .selects {
+      width: 100%;
+      background-color: black;
+      border: black;
+      margin: 0% 1% 0% 0%;
+      margin-block-end: auto;
+      font-size: 0.9rem;
+      color: white;
+  }
+  .selects select:last-of-type {
+      margin: 10%;
+  }
+  .options {
+      font-size: 0.9rem;
+      box-sizing: content-box;
+  }
+
+  
+  /* atletas pantalla principal */
+  .input {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 2rem;
+      box-sizing: border-box;
+  }
+  /* titulo seccion */
+  .title {
+      font-family: sans-serif;
+      color: #bdbdbd;
+      width: 15%;
+      margin: 2% 0% 0% 2%;
+      font-size: medium;
+      display: none;
+  }
+  /* botones para ordenar A-Z Z-A */
+  .button-az {
+      margin-left: 0%;
+      background: #F2F2F2;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      width: 15%;
+      height: 2rem;
+      border: solid 1px #f2f2f2;
+      color: #bdbdbd;
+      cursor: pointer;
+      font-size: 0.9rem;
+  }
+  .button-za {
+      margin-left: 2%;
+      background: #F2F2F2;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      width: 15%;
+      height: 2rem;
+      border: solid 1px #f2f2f2;
+      color: #bdbdbd;
+      cursor: pointer;
+      font-size: 0.9rem;
+  }
+  /*input buscar */
+  .search {
+      margin: 0 0 0 8%;
+      background: #f2f2f2 url(imagenes/lupa.png) no-repeat left;
+      background-position: 2%;
+      border: solid 1px #f2f2f2;
+      border-radius: 93px;
+      width: 60%;
+      height: 2rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: 0.9rem;
+      text-align: center;
+      font-family: sans-serif;
+      color: #fdfdfd;
+  }
+  #all-athletes {
+      width: 100%;
+      display: flex;
+      padding: .3rem;
+      flex-flow: wrap;
+      justify-content: space-around;
+      box-sizing: border-box;
+  }
+  .box {
+      width: 49%;
+      background-color: #26798e;
+      border-radius: 10%;
+      margin: 1rem 0 1rem 0;
+      padding: .2rem;
+      box-sizing: border-box;
+  }
+  .box:hover {
+      cursor: pointer;
+      box-shadow: 0 4px 10px 0 rgba(134, 214, 188, 0.9);
+  }
+  .avatar {
+      width: 50%;
+      margin-left: 25%;
+  }
+  .name {
+      text-align: center;
+      font-size: .9rem;
+      font-family: verdana;
+      font-weight: lighter;
+      color: white;
+  }
+  .info {
+      font-size: .7rem;
+      font-family: verdana;
+      color: white;
+      text-align: center;
+  }
+
+  /* modal */
+  .hide {
+      display: none;
+  }
+  .modal-athlete {
+      padding-bottom: 5%;
+      position: absolute;
+  }
+  .box-modal {
+      background-color: rgba(142, 150, 142, 0.7);
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 1;
+      box-sizing: border-box;
+      position: fixed;
+  }
+  .avatar2 {
+      width: 40%;
+      margin: 0% 0% 2% 0%;
+  }
+  .athlete {
+      background-color: rgb(42, 150, 150);
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0% 0% 2% 0%;
+      border-radius: 5%;
+      margin: auto;
+  }
+  .close {
+      text-align: center;
+      color: black;
+      font-size: 1.5rem;
+      cursor: pointer;
+      align-self: flex-end;
+      margin: 3% 3% 0% 0%;
+      background-color: #fdfdfd;
+      border-radius: 15%;
+      width: 6%;
+      height: 6%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  table {
+      border-collapse: collapse;
+      margin: 2%;
+  }
+  td {
+      border: 1px solid white;
+  }
+  /* footer */
+  footer {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: black;
+      box-sizing: border-box;
+  }
+  .athlos-info {
+      width: 80%;
+      padding: .2rem;
+      margin: 0 0 0 .5rem;
+      box-sizing: border-box;
+  }
+  .athlos {
+      font-size: .5rem;
+      font-family: sans-serif;
+      color: white;
+  }
+  .barra-inferior {
+      padding: .3rem;
+      box-sizing: border-box;
+      width: 50%;
+  }
+  .navFooter {
+      display: flex;
+      justify-content: flex-end;
+  }
+}
+
 @media (max-width:1024px) and (min-width:608px) {
     /* header*/
     .header {
@@ -518,15 +783,16 @@ footer {
     }
     .navegador {
         display: flex;
-        margin: 0% 0% 0% 27%;
+        margin: 0% 0% 0% 0%;
         width: 85%;
+        justify-content: space-between;
         box-sizing: border-box;
     }
     .selects {
         width: 25%;
         background-color: black;
         border: black;
-        margin: 0% 5% 0% 0%;
+        margin: 0% 2% 0% 0%;
         margin-block-end: 0%;
         font-size: 1.3rem;
         color: white
@@ -556,7 +822,7 @@ footer {
     }
     /* botones para ordenar A-Z Z-A */
     .button-az {
-        margin-left: 35%;
+        margin-left: 48%;
         background: #F2F2F2;
         box-sizing: border-box;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -582,7 +848,8 @@ footer {
     /* input buscar */
     .search {
         margin-left: 2%;
-        background: #f2f2f2;
+        background: #f2f2f2 url(imagenes/lupa.png) no-repeat left;
+        background-position: 2%;
         border: solid 1px #f2f2f2;
         border-radius: 93px;
         width: 25%;
@@ -602,7 +869,7 @@ footer {
         box-sizing: border-box;
     }
     .box {
-        width: 30%;
+        width: 31%;
         background-color: #26798e;
         border-radius: 10%;
         margin: 1rem 0 1rem 0;
@@ -630,230 +897,7 @@ footer {
         color: white;
         text-align: center;
     }
-    .flag {
-        width: 20%;
-        margin-left: 40%;
-    }
-    /* modal */
-    .hide {
-        display: none;
-    }
-    .modal-athlete {
-        padding-bottom: 2%;
-        position: absolute;
-    }
-    .box-modal {
-        background-color: rgba(142, 150, 142, 0.7);
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        z-index: 1;
-        box-sizing: border-box;
-        position: fixed;
-    }
-    .avatar2 {
-        width: 40%;
-        margin: 0% 0% 2% 0%;
-    }
-    .athlete {
-        background-color: rgb(42, 150, 150);
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0% 0% 2% 0%;
-        border-radius: 5%;
-        margin: auto;
-    }
-    .close {
-        text-align: center;
-        color: black;
-        font-size: 2rem;
-        cursor: pointer;
-        align-self: flex-end;
-        margin: 3% 3% 0% 0%;
-        background-color: #fdfdfd;
-        border-radius: 15%;
-        width: 9%;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    table {
-        border-collapse: collapse;
-        margin: 2%;
-    }
-    td {
-        border: 1px solid white;
-    }
-    /* footer */
-    footer {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        background-color: black;
-        box-sizing: border-box;
-    }
-    .athlos-info {
-        width: 80%;
-        padding: .2rem;
-        margin: 0 0 0 .5rem;
-        box-sizing: border-box;
-    }
-    .athlos {
-        font-size: 1rem;
-        font-family: sans-serif;
-        color: white;
-    }
-    .barra-inferior {
-        padding: .3rem;
-        box-sizing: border-box;
-        width: 20%;
-    }
-    .navFooter {
-        display: flex;
-        justify-content: flex-end;
-    }
-}
 
-@media (min-width:1024px) {
-    /* header*/
-    .header {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 1%;
-        background-color: black;
-        box-sizing: border-box;
-    }
-    a {
-        margin: 0%;
-        width: 15%;
-        box-sizing: border-box;
-    }
-    .logo {
-        width: 80%;
-        height: 40%;
-        margin-left: 17%;
-    }
-    .navegador {
-        display: flex;
-        margin: 0% 0% 0% 27%;
-        width: 85%;
-        box-sizing: border-box;
-    }
-    .selects {
-        width: 25%;
-        background-color: black;
-        border: black;
-        margin: 0% 5% 0% 0%;
-        margin-block-end: 0%;
-        font-size: 1.3rem;
-        color: white
-    }
-    .selects select:last-of-type {
-        margin: 0%;
-    }
-    .options {
-        border: white .5px;
-        font-size: 1rem;
-        text-align: center;
-    }
-    /* atletas pantalla principal */
-    .input {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding: 1rem;
-        box-sizing: border-box;
-    }
-    /* titulo seccion */
-    .title {
-        font-family: sans-serif;
-        color: #bdbdbd;
-        width: 15%;
-        margin: 0% 0% 0% 10%;
-    }
-    /* botones para ordenar A-Z Z-A */
-    .button-az {
-        margin-left: 35%;
-        background: #F2F2F2;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
-        width: 5%;
-        height: 2rem;
-        border: solid 1px #f2f2f2;
-        color: #bdbdbd;
-        cursor: pointer;
-    }
-    .button-za {
-        margin-left: 2%;
-        background: #F2F2F2;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
-        width: 5%;
-        height: 2rem;
-        border: solid 1px #f2f2f2;
-        color: #bdbdbd;
-        cursor: pointer;
-    }
-    /* input buscar */
-    .search {
-        margin-left: 2%;
-        background: #f2f2f2;
-        border: solid 1px #f2f2f2;
-        border-radius: 93px;
-        width: 25%;
-        height: 2rem;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 1rem;
-        text-align: center;
-        font-family: sans-serif;
-        color: #fdfdfd;
-    }
-    #all-athletes {
-        width: 100%;
-        display: flex;
-        padding: 1rem;
-        flex-flow: wrap;
-        justify-content: space-around;
-        box-sizing: border-box;
-    }
-    .box {
-        width: 18%;
-        background-color: #26798e;
-        border-radius: 10%;
-        margin: 1rem 0 1rem 0;
-        padding: .2rem;
-        box-sizing: border-box;
-    }
-    .box:hover {
-        cursor: pointer;
-        box-shadow: 0 4px 10px 0 rgba(134, 214, 188, 0.9);
-    }
-    .avatar {
-        width: 50%;
-        margin-left: 25%;
-    }
-    .name {
-        text-align: center;
-        font-size: .9rem;
-        font-family: verdana;
-        font-weight: lighter;
-        color: white;
-    }
-    .info {
-        font-size: .7rem;
-        font-family: verdana;
-        color: white;
-        text-align: center;
-    }
-    .flag {
-        width: 20%;
-        margin-left: 40%;
-    }
     /* modal */
     .hide {
         display: none;
@@ -874,12 +918,25 @@ footer {
         position: fixed;
     }
     .avatar2 {
-        width: 40%;
+        width: 30%;
         margin: 0% 0% 2% 0%;
+    }
+    .name-modal{
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: verdana;
+      font-weight: lighter;
+      color:white;
+    }
+    .info-modal{
+      font-size: .8rem;
+      font-family: verdana;
+      color: white;
+      text-align: center;
     }
     .athlete {
         background-color: rgb(42, 150, 150);
-        width: 40%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
